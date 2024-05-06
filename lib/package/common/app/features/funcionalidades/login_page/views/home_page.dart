@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fsadu/package/common/app/features/home/widgets/cabecalho_home_page.dart';
-import 'package:fsadu/package/common/app/features/home/widgets/footer.dart';
-import 'package:fsadu/package/common/app/features/home/widgets/login_form.dart';
+import 'package:fsadu/package/common/app/features/funcionalidades/widget/cabecalho_logo.dart';
+import 'package:fsadu/package/common/app/features/funcionalidades/login_page/widgets/footer.dart';
+import 'package:fsadu/package/common/app/features/funcionalidades/login_page/widgets/login_form.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            CabecalhoHome(),
+            CabecalhoLogo(),
             LoginForm(),
             Footer(),
           ],

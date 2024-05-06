@@ -3,8 +3,10 @@ import 'package:fsadu/package/common/app/features/ui/cores/cores.dart';
 import 'package:fsadu/package/common/app/features/ui/tamanho/sizes.dart';
 import 'package:fsadu/package/common/app/features/ui/texto/textos.dart';
 
-class CabecalhoHome extends StatelessWidget {
-  const CabecalhoHome({super.key});
+class CabecalhoLogo extends StatelessWidget {
+  final String? text;
+
+  const CabecalhoLogo({super.key, this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -49,9 +51,9 @@ class CabecalhoHome extends StatelessWidget {
                 center: Alignment.center,
               ),
             ),
-            child: const Text(
-              'Login',
-              style: TextStyle(color: Colors.white, fontSize: 18),
+            child: Text(
+              text ?? 'a',
+              style: const TextStyle(color: Colors.white, fontSize: 18),
             )),
       ],
     );

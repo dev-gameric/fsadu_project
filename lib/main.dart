@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fsadu/package/common/app/features/config/services/config.dart';
-import 'package:fsadu/package/common/app/features/home/views/home_page.dart';
+import 'package:fsadu/package/common/app/features/funcionalidades/cadastro_colaborador/views/cadastro_colaborador.dart';
+import 'package:fsadu/package/common/app/features/funcionalidades/login_page/views/home_page.dart';
 import 'package:fsadu/package/common/app/features/theme/tema.dart';
 import 'package:get/get.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'FSADU',
       theme: Tema().tema,
-      home: const HomePage(),
+      home: const CadastroColaborador(),
     );
   }
 }
